@@ -1,6 +1,6 @@
 {
-  "name": "@better-scroll/core",
-  "version": "2.5.1",
+  "name": "tz-better-scroll-core",
+  "version": "2.5.2-alpha.0",
   "description": "Minimalistic core scrolling for BetterScroll, it is pure and tiny",
   "author": {
     "name": "jizhi",
