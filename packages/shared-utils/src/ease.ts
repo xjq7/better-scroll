@@ -31,5 +31,11 @@ export const ease: EaseMap = {
     fn: function(t: number) {
       return 1 - --t * t * t * t
     }
-  }
+  },
+  circular: {
+    style: 'cubic-bezier(0.1, 0.57, 0.1, 1)',
+    fn: function (t: number) {
+      return Math.sqrt(1 - --t * t)
+    },
+  },
 }
