@@ -8,7 +8,7 @@ import {
   MouseButton,
   EventRegister,
   EventEmitter,
-} from '@better-scroll/shared-utils'
+} from 'tz-better-scroll-shared-utils'
 
 type Exception = {
   tagName?: RegExp
@@ -107,11 +107,8 @@ export default class ActionsHandler {
   }
 
   private beforeHandler(e: TouchEvent, type: 'start' | 'move' | 'end') {
-    const {
-      preventDefault,
-      stopPropagation,
-      preventDefaultException,
-    } = this.options
+    const { preventDefault, stopPropagation, preventDefaultException } =
+      this.options
 
     const preventDefaultConditions = {
       start: () => {

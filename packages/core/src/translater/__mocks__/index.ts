@@ -1,4 +1,4 @@
-import { EventEmitter } from '@better-scroll/shared-utils'
+import { EventEmitter } from 'tz-better-scroll-shared-utils'
 
 const Translater = jest.fn().mockImplementation((content) => {
   return {

@@ -1,4 +1,4 @@
-import { EventEmitter } from '@better-scroll/shared-utils'
+import { EventEmitter } from 'tz-better-scroll-shared-utils'
 
 const Behavior = jest.fn().mockImplementation((content, bscrollOptions) => {
   return {

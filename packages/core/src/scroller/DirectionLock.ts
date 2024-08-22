@@ -3,7 +3,7 @@ import {
   DirectionLock,
   EventPassthrough,
   maybePrevent,
-} from '@better-scroll/shared-utils'
+} from 'tz-better-scroll-shared-utils'
 
 const enum Passthrough {
   Yes = 'yes',

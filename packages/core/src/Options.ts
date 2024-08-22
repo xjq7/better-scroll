@@ -6,7 +6,7 @@ import {
   EventPassthrough,
   extend,
   Quadrant,
-} from '@better-scroll/shared-utils'
+} from 'tz-better-scroll-shared-utils'
 
 // type
 export type Tap = 'tap' | ''

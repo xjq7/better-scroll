@@ -1,4 +1,4 @@
-import { Direction } from '@better-scroll/shared-utils'
+import { Direction } from 'tz-better-scroll-shared-utils'
 import { TranslaterPoint } from '../translater'
 
 type Position = {

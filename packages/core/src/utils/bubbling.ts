@@ -1,4 +1,4 @@
-import { EventEmitter } from '@better-scroll/shared-utils'
+import { EventEmitter } from 'tz-better-scroll-shared-utils'
 
 interface BubblingEventMap {
   source: string
@@ -10,7 +10,7 @@ export function bubbling(
   target: EventEmitter,
   events: BubblingEventConfig[]
 ) {
-  events.forEach(event => {
+  events.forEach((event) => {
     let sourceEvent: string
     let targetEvent: string
     if (typeof event === 'string') {
@@ -19,7 +19,7 @@ export function bubbling(
       sourceEvent = event.source
       targetEvent = event.target
     }
-    source.on(sourceEvent, function(...args: any[]) {
+    source.on(sourceEvent, function (...args: any[]) {
       return target.trigger(targetEvent, ...args)
     })
   })

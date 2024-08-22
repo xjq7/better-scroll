@@ -27,7 +27,7 @@ import {
   Probe,
   EventEmitter,
   EventRegister,
-} from '@better-scroll/shared-utils'
+} from 'tz-better-scroll-shared-utils'
 import { bubbling } from '../utils/bubbling'
 import { isSamePoint } from '../utils/compare'
 import { MountedBScrollHTMLElement } from '../BScroll'
@@ -320,7 +320,7 @@ export default class Scroller implements ExposedAPI {
   private momentum(pos: TranslaterPoint, duration: number) {
     const meta = {
       time: 0,
-      easing: ease.swiper,
+      easing: ease.circular,
       newX: pos.x,
       newY: pos.y,
     }
@@ -590,14 +590,10 @@ export default class Scroller implements ExposedAPI {
   }
 
   resetPosition(time = 0, easing = ease.bounce) {
-    const {
-      position: x,
-      inBoundary: xInBoundary,
-    } = this.scrollBehaviorX.checkInBoundary()
-    const {
-      position: y,
-      inBoundary: yInBoundary,
-    } = this.scrollBehaviorY.checkInBoundary()
+    const { position: x, inBoundary: xInBoundary } =
+      this.scrollBehaviorX.checkInBoundary()
+    const { position: y, inBoundary: yInBoundary } =
+      this.scrollBehaviorY.checkInBoundary()
 
     if (xInBoundary && yInBoundary) {
       return false

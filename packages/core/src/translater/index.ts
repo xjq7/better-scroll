@@ -2,7 +2,7 @@ import {
   style,
   safeCSSStyleDeclaration,
   EventEmitter,
-} from '@better-scroll/shared-utils'
+} from 'tz-better-scroll-shared-utils'
 export interface TranslaterPoint {
   x: number
   y: number

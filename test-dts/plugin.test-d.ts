@@ -34,7 +34,7 @@ import {
   FilterBoolean,
   ExcludeTrue,
 } from './util'
-import { EaseItem } from '@better-scroll/shared-utils/src'
+import { EaseItem } from 'tz-better-scroll-shared-utils/src'
 describe('BScroll.use should be used normally', () => {
   // @ts-expect-error
   expectError(BScroll.use())
