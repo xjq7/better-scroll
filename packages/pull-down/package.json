@@ -1,6 +1,6 @@
 {
   "name": "tz-better-scroll-pull-down",
-  "version": "2.5.2-alpha.1",
+  "version": "2.5.2-alpha.2",
   "description": "pull down to refresh, behave likes App list refreshing",
   "author": {
     "name": "jizhi",
@@ -31,7 +31,7 @@
     "directory": "packages/pull-down"
   },
   "dependencies": {
-    "tz-better-scroll-core": "2.5.2-alpha.1"
+    "tz-better-scroll-core": "^2.5.2-alpha.2"
   },
   "gitHead": "f441227b6137d44ba0b44b97ed4cd49de9386130"
 }

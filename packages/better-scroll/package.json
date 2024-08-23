@@ -1,6 +1,6 @@
 {
   "name": "better-scroll",
-  "version": "2.5.2-alpha.1",
+  "version": "2.5.2-alpha.2",
   "description": "Full-featured BetterScroll",
   "author": {
     "name": "jizhi",
@@ -31,20 +31,20 @@
     "directory": "packages/better-scroll"
   },
   "dependencies": {
-    "tz-better-scroll-core": "2.5.2-alpha.1",
-    "tz-better-scroll-indicators": "2.5.2-alpha.1",
-    "tz-better-scroll-infinity": "2.5.2-alpha.1",
-    "tz-better-scroll-mouse-wheel": "2.5.2-alpha.1",
-    "tz-better-scroll-movable": "2.5.2-alpha.1",
-    "tz-better-scroll-nested-scroll": "2.5.2-alpha.1",
-    "tz-better-scroll-observe-dom": "2.5.2-alpha.1",
-    "tz-better-scroll-observe-image": "2.5.2-alpha.1",
-    "tz-better-scroll-pull-down": "2.5.2-alpha.1",
-    "tz-better-scroll-pull-up": "2.5.2-alpha.1",
-    "tz-better-scroll-scroll-bar": "2.5.2-alpha.1",
-    "tz-better-scroll-slide": "2.5.2-alpha.1",
-    "tz-better-scroll-wheel": "2.5.2-alpha.1",
-    "tz-better-scroll-zoom": "2.5.2-alpha.1"
+    "tz-better-scroll-core": "^2.5.2-alpha.2",
+    "tz-better-scroll-indicators": "^2.5.2-alpha.2",
+    "tz-better-scroll-infinity": "^2.5.2-alpha.2",
+    "tz-better-scroll-mouse-wheel": "^2.5.2-alpha.2",
+    "tz-better-scroll-movable": "^2.5.2-alpha.2",
+    "tz-better-scroll-nested-scroll": "^2.5.2-alpha.2",
+    "tz-better-scroll-observe-dom": "^2.5.2-alpha.2",
+    "tz-better-scroll-observe-image": "^2.5.2-alpha.2",
+    "tz-better-scroll-pull-down": "^2.5.2-alpha.2",
+    "tz-better-scroll-pull-up": "^2.5.2-alpha.2",
+    "tz-better-scroll-scroll-bar": "^2.5.2-alpha.2",
+    "tz-better-scroll-slide": "^2.5.2-alpha.2",
+    "tz-better-scroll-wheel": "^2.5.2-alpha.2",
+    "tz-better-scroll-zoom": "^2.5.2-alpha.2"
   },
   "gitHead": "f441227b6137d44ba0b44b97ed4cd49de9386130"
 }
