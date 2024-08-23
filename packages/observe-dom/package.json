@@ -1,6 +1,6 @@
 {
   "name": "tz-better-scroll-observe-dom",
-  "version": "2.5.2",
+  "version": "2.5.3",
   "description": "Dynamic recalculating container's size for BetterScroll",
   "author": {
     "name": "jizhi",
@@ -30,7 +30,7 @@
     "directory": "packages/observe-dom"
   },
   "dependencies": {
-    "tz-better-scroll-core": "^2.5.2"
+    "tz-better-scroll-core": "^2.5.3"
   },
-  "gitHead": "f441227b6137d44ba0b44b97ed4cd49de9386130"
+  "gitHead": "5903d9832b35b02f4926a0dea91e7d24371e1b6a"
 }
