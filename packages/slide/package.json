@@ -1,6 +1,6 @@
 {
 	"name": "tz-better-scroll-slide",
-	"version": "2.5.2-alpha.5",
+	"version": "2.5.2-alpha.6",
 	"description": "a carousel effect triggered by BetterScroll",
 	"author": {
 		"name": "jizhi",
@@ -30,7 +30,7 @@
 		"directory": "packages/slide"
 	},
 	"dependencies": {
-		"tz-better-scroll-core": "^2.5.2-alpha.5"
+		"tz-better-scroll-core": "^2.5.2-alpha.6"
 	},
 	"gitHead": "f441227b6137d44ba0b44b97ed4cd49de9386130"
 }
