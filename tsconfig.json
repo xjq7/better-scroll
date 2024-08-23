@@ -5,7 +5,7 @@
     "outDir": "dist",
     "moduleResolution": "node",
     "paths": {
-      "@better-scroll/*": ["packages/*/src"]
+      "tz-better-scroll-*": ["packages/*/src"]
     },
     "target": "es5",
     "module": "es2015",
