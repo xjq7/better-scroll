@@ -320,7 +320,7 @@ export default class Scroller implements ExposedAPI {
   private momentum(pos: TranslaterPoint, duration: number) {
     const meta = {
       time: 0,
-      easing: ease.swiper,
+      easing: ease.circular,
       newX: pos.x,
       newY: pos.y,
     }

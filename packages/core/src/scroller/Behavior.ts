@@ -148,11 +148,11 @@ export class Behavior {
     wrapperSize: number,
     options = this.options
   ) {
-    const distance = current - start
+    let distance = current - start
     const speed = Math.abs(distance) / time
 
     const { deceleration, swipeBounceTime, swipeTime } = options
-    const duration = Math.min(swipeTime, (speed * 2) / deceleration)
+    const duration = speed / deceleration
     const momentumData = {
       destination:
         current + ((speed * speed) / deceleration) * (distance < 0 ? -1 : 1),
@@ -164,23 +164,18 @@ export class Behavior {
 
     if (momentumData.destination < lowerMargin) {
       momentumData.destination = wrapperSize
-        ? Math.max(
-            lowerMargin - wrapperSize / 4,
-            lowerMargin - (wrapperSize / momentumData.rate) * speed
-          )
+        ? lowerMargin - (wrapperSize / 2.5) * (speed / 8)
         : lowerMargin
-      momentumData.duration = swipeBounceTime
+      distance = Math.abs(momentumData.destination - current)
+      momentumData.duration = distance / speed
     } else if (momentumData.destination > upperMargin) {
       momentumData.destination = wrapperSize
-        ? Math.min(
-            upperMargin + wrapperSize / 4,
-            upperMargin + (wrapperSize / momentumData.rate) * speed
-          )
-        : upperMargin
-      momentumData.duration = swipeBounceTime
+        ? (wrapperSize / 2.5) * (speed / 8)
+        : 0
+      distance = Math.abs(current) + momentumData.destination
+      momentumData.duration = distance / speed
     }
     momentumData.destination = Math.round(momentumData.destination)
-
     return momentumData
   }
 
