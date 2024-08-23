@@ -1,6 +1,6 @@
 {
   "name": "tz-better-scroll-observe-image",
-  "version": "2.5.2-alpha.6",
+  "version": "2.5.2",
   "description": "Observe image loading for BetterScroll",
   "author": "theniceangel <theniceangel@163.com>",
   "homepage": "https://github.com/ustbhuangyi/better-scroll/tree/master/packages/observe-image#readme",
@@ -28,6 +28,6 @@
     "url": "https://github.com/ustbhuangyi/better-scroll/issues"
   },
   "dependencies": {
-    "tz-better-scroll-core": "^2.5.2-alpha.6"
+    "tz-better-scroll-core": "^2.5.2"
   }
 }

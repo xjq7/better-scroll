@@ -1,6 +1,6 @@
 {
   "name": "tz-better-scroll-movable",
-  "version": "2.5.2-alpha.6",
+  "version": "2.5.2",
   "description": "Movable plugin for BetterScroll",
   "author": {
     "name": "jizhi",
@@ -30,6 +30,6 @@
     "directory": "packages/observe-dom"
   },
   "dependencies": {
-    "tz-better-scroll-core": "^2.5.2-alpha.6"
+    "tz-better-scroll-core": "^2.5.2"
   }
 }
