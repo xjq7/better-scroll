@@ -1,6 +1,6 @@
 import Scroller from '../scroller/Scroller'
 import { OptionsConstructor } from '../Options'
-import { EventEmitter } from '@better-scroll/shared-utils'
+import { EventEmitter } from 'tz-better-scroll-shared-utils'
 
 jest.mock('../scroller/Scroller')
 jest.mock('../Options')

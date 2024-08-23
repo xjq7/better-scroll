@@ -4,7 +4,7 @@ import {
   cancelAnimationFrame,
   EventEmitter,
   Probe,
-} from '@better-scroll/shared-utils'
+} from 'tz-better-scroll-shared-utils'
 import Translater, { TranslaterPoint } from '../translater'
 
 export interface ExposedAPI {

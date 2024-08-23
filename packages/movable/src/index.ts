@@ -1,16 +1,16 @@
-import BScroll, { Behavior, Boundary } from '@better-scroll/core'
+import BScroll, { Behavior, Boundary } from 'tz-better-scroll-core'
 import {
   ease,
   EventEmitter,
   ApplyOrder,
   EaseItem,
-} from '@better-scroll/shared-utils'
+} from 'tz-better-scroll-shared-utils'
 import propertiesConfig from './propertiesConfig'
 
 type PositionX = number | 'left' | 'right' | 'center'
 type PositionY = number | 'top' | 'bottom' | 'center'
 
-declare module '@better-scroll/core' {
+declare module 'tz-better-scroll-core' {
   interface CustomOptions {
     movable?: true
   }

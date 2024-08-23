@@ -1,5 +1,5 @@
-import BScroll, { Boundary } from '@better-scroll/core'
-import { Probe, warn } from '@better-scroll/shared-utils'
+import BScroll, { Boundary } from 'tz-better-scroll-core'
+import { Probe, warn } from 'tz-better-scroll-shared-utils'
 import IndexCalculator from './IndexCalculator'
 import DataManager from './DataManager'
 import DomManager from './DomManager'
@@ -11,7 +11,7 @@ export interface InfinityOptions {
   createTombstone: () => HTMLElement
 }
 
-declare module '@better-scroll/core' {
+declare module 'tz-better-scroll-core' {
   interface CustomOptions {
     infinity?: InfinityOptions
   }
@@ -133,9 +133,11 @@ export default class InfinityScroll {
     return end
   }
 
-  private updateDom(
-    list: Array<any>
-  ): { end: number; startPos: number; endPos: number } {
+  private updateDom(list: Array<any>): {
+    end: number
+    startPos: number
+    endPos: number
+  } {
     const { end, startPos, endPos, startDelta } = this.domManager.update(
       list,
       this.start,

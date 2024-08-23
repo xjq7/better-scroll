@@ -3,7 +3,7 @@ jest.mock('../../translater')
 
 let mockRequestAnimationFrame = jest.fn()
 let mockCancelAnimationFrame = jest.fn()
-jest.mock('@better-scroll/shared-utils/src/raf', () => {
+jest.mock('tz-better-scroll-shared-utils/src/raf', () => {
   return {
     requestAnimationFrame: (cb: any) => mockRequestAnimationFrame(cb),
     cancelAnimationFrame: () => mockCancelAnimationFrame(),
@@ -11,7 +11,7 @@ jest.mock('@better-scroll/shared-utils/src/raf', () => {
 })
 
 let mockGetNow = jest.fn()
-jest.mock('@better-scroll/shared-utils/src/lang', () => {
+jest.mock('tz-better-scroll-shared-utils/src/lang', () => {
   return {
     getNow: () => mockGetNow(),
   }

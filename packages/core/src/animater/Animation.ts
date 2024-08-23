@@ -6,7 +6,7 @@ import {
   cancelAnimationFrame,
   EaseFn,
   Probe,
-} from '@better-scroll/shared-utils'
+} from 'tz-better-scroll-shared-utils'
 
 export default class Animation extends Base {
   move(

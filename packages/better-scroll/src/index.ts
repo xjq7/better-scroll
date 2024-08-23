@@ -1,17 +1,17 @@
-import BScroll from '@better-scroll/core'
-import MouseWheel from '@better-scroll/mouse-wheel'
-import ObserveDom from '@better-scroll/observe-dom'
-import PullDownRefresh from '@better-scroll/pull-down'
-import PullUpLoad from '@better-scroll/pull-up'
-import ScrollBar from '@better-scroll/scroll-bar'
-import Slide from '@better-scroll/slide'
-import Wheel from '@better-scroll/wheel'
-import Zoom from '@better-scroll/zoom'
-import NestedScroll from '@better-scroll/nested-scroll'
-import InfinityScroll from '@better-scroll/infinity'
-import Movable from '@better-scroll/movable'
-import ObserveImage from '@better-scroll/observe-image'
-import Indicators from '@better-scroll/indicators'
+import BScroll from 'tz-better-scroll-core'
+import MouseWheel from 'tz-better-scroll-mouse-wheel'
+import ObserveDom from 'tz-better-scroll-observe-dom'
+import PullDownRefresh from 'tz-better-scroll-pull-down'
+import PullUpLoad from 'tz-better-scroll-pull-up'
+import ScrollBar from 'tz-better-scroll-scroll-bar'
+import Slide from 'tz-better-scroll-slide'
+import Wheel from 'tz-better-scroll-wheel'
+import Zoom from 'tz-better-scroll-zoom'
+import NestedScroll from 'tz-better-scroll-nested-scroll'
+import InfinityScroll from 'tz-better-scroll-infinity'
+import Movable from 'tz-better-scroll-movable'
+import ObserveImage from 'tz-better-scroll-observe-image'
+import Indicators from 'tz-better-scroll-indicators'
 
 export {
   createBScroll,
@@ -22,8 +22,8 @@ export {
   MountedBScrollHTMLElement,
   Behavior,
   Boundary,
-  CustomAPI
-} from '@better-scroll/core'
+  CustomAPI,
+} from 'tz-better-scroll-core'
 
 export {
   MouseWheel,
@@ -38,7 +38,7 @@ export {
   InfinityScroll,
   Movable,
   ObserveImage,
-  Indicators
+  Indicators,
 }
 
 BScroll.use(MouseWheel)

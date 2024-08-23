@@ -1,9 +1,9 @@
-import BScroll from '@better-scroll/core'
+import BScroll from 'tz-better-scroll-core'
 import Zoom from '../index'
-import { ease } from '@better-scroll/shared-utils'
+import { ease } from 'tz-better-scroll-shared-utils'
 import { createTouchEvent, createZoomElements } from './__utils__/util'
-jest.mock('@better-scroll/core')
-jest.mock('@better-scroll/core/src/animater/index')
+jest.mock('tz-better-scroll-core')
+jest.mock('tz-better-scroll-core/src/animater/index')
 
 describe('zoom plugin', () => {
   let scroll: BScroll
@@ -529,12 +529,8 @@ describe('zoom plugin', () => {
 
   it('should destroy all events', () => {
     new Zoom(scroll)
-    const {
-      actions,
-      scrollBehaviorX,
-      scrollBehaviorY,
-      translater,
-    } = scroll.scroller
+    const { actions, scrollBehaviorX, scrollBehaviorY, translater } =
+      scroll.scroller
     scroll.hooks.trigger(scroll.hooks.eventTypes.destroy)
     expect(scrollBehaviorX.hooks.events['beforeComputeBoundary'].length).toBe(0)
     expect(scrollBehaviorY.hooks.events['beforeComputeBoundary'].length).toBe(0)

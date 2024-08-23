@@ -1,10 +1,10 @@
-import BScroll, { Boundary } from '@better-scroll/core'
+import BScroll, { Boundary } from 'tz-better-scroll-core'
 import {
   Probe,
   Direction,
   extend,
   EventEmitter,
-} from '@better-scroll/shared-utils'
+} from 'tz-better-scroll-shared-utils'
 import propertiesConfig from './propertiesConfig'
 
 export type PullUpLoadOptions = Partial<PullUpLoadConfig> | true
@@ -12,7 +12,7 @@ export interface PullUpLoadConfig {
   threshold: number
 }
 
-declare module '@better-scroll/core' {
+declare module 'tz-better-scroll-core' {
   interface CustomOptions {
     pullUpLoad?: PullUpLoadOptions
   }
@@ -56,9 +56,9 @@ export default class PullUp implements PluginAPI {
   }
 
   private handleOptions(userOptions: PullUpLoadOptions = {}) {
-    userOptions = (userOptions === true ? {} : userOptions) as Partial<
-      PullUpLoadConfig
-    >
+    userOptions = (
+      userOptions === true ? {} : userOptions
+    ) as Partial<PullUpLoadConfig>
     const defaultOptions: PullUpLoadConfig = {
       threshold: 0,
     }

@@ -1,6 +1,6 @@
-import BScroll, { Boundary } from '@better-scroll/core'
-jest.mock('@better-scroll/core')
-import { createDiv } from '@better-scroll/core/src/__tests__/__utils__/layout'
+import BScroll, { Boundary } from 'tz-better-scroll-core'
+jest.mock('tz-better-scroll-core')
+import { createDiv } from 'tz-better-scroll-core/src/__tests__/__utils__/layout'
 import Movable from '../index'
 
 const createMovableEls = () => {

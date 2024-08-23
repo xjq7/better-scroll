@@ -1,29 +1,29 @@
-import BScroll from '@better-scroll/core'
-import Zoom from '@better-scroll/zoom'
-import Wheel from '@better-scroll/wheel'
-import Slide from '@better-scroll/slide'
-import ScrollBar from '@better-scroll/scroll-bar'
-import PullUp from '@better-scroll/pull-up'
-import PullDown from '@better-scroll/pull-down'
-import ObserveDom from '@better-scroll/observe-dom'
-import NestedScroll from '@better-scroll/nested-scroll'
-import MouseWheel from '@better-scroll/mouse-wheel'
-import Infinity from '@better-scroll/infinity'
-import Movable from '@better-scroll/movable'
+import BScroll from 'tz-better-scroll-core'
+import Zoom from 'tz-better-scroll-zoom'
+import Wheel from 'tz-better-scroll-wheel'
+import Slide from 'tz-better-scroll-slide'
+import ScrollBar from 'tz-better-scroll-scroll-bar'
+import PullUp from 'tz-better-scroll-pull-up'
+import PullDown from 'tz-better-scroll-pull-down'
+import ObserveDom from 'tz-better-scroll-observe-dom'
+import NestedScroll from 'tz-better-scroll-nested-scroll'
+import MouseWheel from 'tz-better-scroll-mouse-wheel'
+import Infinity from 'tz-better-scroll-infinity'
+import Movable from 'tz-better-scroll-movable'
 import { IfEquals } from './util'
 
-export * from '@better-scroll/core'
-export * from '@better-scroll/zoom'
-export * from '@better-scroll/wheel'
-export * from '@better-scroll/slide'
-export * from '@better-scroll/scroll-bar'
-export * from '@better-scroll/pull-up'
-export * from '@better-scroll/pull-down'
-export * from '@better-scroll/observe-dom'
-export * from '@better-scroll/nested-scroll'
-export * from '@better-scroll/mouse-wheel'
-export * from '@better-scroll/infinity'
-export * from '@better-scroll/movable'
+export * from 'tz-better-scroll-core'
+export * from 'tz-better-scroll-zoom'
+export * from 'tz-better-scroll-wheel'
+export * from 'tz-better-scroll-slide'
+export * from 'tz-better-scroll-scroll-bar'
+export * from 'tz-better-scroll-pull-up'
+export * from 'tz-better-scroll-pull-down'
+export * from 'tz-better-scroll-observe-dom'
+export * from 'tz-better-scroll-nested-scroll'
+export * from 'tz-better-scroll-mouse-wheel'
+export * from 'tz-better-scroll-infinity'
+export * from 'tz-better-scroll-movable'
 
 export type ArgumentsCheck<
   T extends any[],
@@ -60,5 +60,5 @@ export {
   NestedScroll,
   MouseWheel,
   Infinity,
-  Movable
+  Movable,
 }

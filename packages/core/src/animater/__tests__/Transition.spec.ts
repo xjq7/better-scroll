@@ -3,14 +3,14 @@ jest.mock('../../translater/index')
 
 let mockRequestAnimationFrame = jest.fn()
 let mockCancelAnimationFrame = jest.fn()
-jest.mock('@better-scroll/shared-utils/src/raf', () => {
+jest.mock('tz-better-scroll-shared-utils/src/raf', () => {
   return {
     requestAnimationFrame: (cb: any) => mockRequestAnimationFrame(cb),
     cancelAnimationFrame: () => mockCancelAnimationFrame(),
   }
 })
 
-import Transition from '@better-scroll/core/src/animater/Transition'
+import Transition from 'tz-better-scroll-core/src/animater/Transition'
 
 function createTransition(probeType: number) {
   const dom = document.createElement('div')

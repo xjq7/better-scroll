@@ -5,8 +5,8 @@
 ## 使用
 
 ```js
-import BScroll from '@better-scroll/core'
-import InfinityScroll from '@better-scroll/infinity'
+import BScroll from 'tz-better-scroll-core'
+import InfinityScroll from 'tz-better-scroll-infinity'
 BScroll.use(InfinityScroll)
 
 const bs = new BScroll('.wrapper', {

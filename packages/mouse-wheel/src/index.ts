@@ -1,4 +1,4 @@
-import BScroll from '@better-scroll/core'
+import BScroll from 'tz-better-scroll-core'
 import {
   warn,
   preventDefaultExceptionFn,
@@ -8,7 +8,7 @@ import {
   ApplyOrder,
   extend,
   maybePrevent,
-} from '@better-scroll/shared-utils'
+} from 'tz-better-scroll-shared-utils'
 
 export type MouseWheelOptions = Partial<MouseWheelConfig> | true
 
@@ -21,7 +21,7 @@ export interface MouseWheelConfig {
   dampingFactor: number
 }
 
-declare module '@better-scroll/core' {
+declare module 'tz-better-scroll-core' {
   interface CustomOptions {
     mouseWheel?: MouseWheelOptions
   }

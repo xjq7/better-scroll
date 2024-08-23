@@ -1,6 +1,11 @@
-import BScroll, { Boundary } from '@better-scroll/core'
-import { MouseWheelConfig } from '@better-scroll/mouse-wheel'
-import { ease, extend, EventEmitter, Probe } from '@better-scroll/shared-utils'
+import BScroll, { Boundary } from 'tz-better-scroll-core'
+import { MouseWheelConfig } from 'tz-better-scroll-mouse-wheel'
+import {
+  ease,
+  extend,
+  EventEmitter,
+  Probe,
+} from 'tz-better-scroll-shared-utils'
 import propertiesConfig from './propertiesConfig'
 
 export type PullDownRefreshOptions = Partial<PullDownRefreshConfig> | true
@@ -26,7 +31,7 @@ export interface PullDownRefreshConfig {
   stop: number
 }
 
-declare module '@better-scroll/core' {
+declare module 'tz-better-scroll-core' {
   interface CustomOptions {
     pullDownRefresh?: PullDownRefreshOptions
   }

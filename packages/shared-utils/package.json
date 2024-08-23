@@ -1,6 +1,6 @@
 {
-	"name": "@better-scroll/shared-utils",
-	"version": "2.5.1",
+	"name": "tz-better-scroll-shared-utils",
+	"version": "2.5.2-alpha.1",
 	"description": "shared-utils for BetterScroll",
 	"author": {
 		"name": "jizhi",

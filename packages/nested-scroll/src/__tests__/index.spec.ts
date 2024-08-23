@@ -1,5 +1,5 @@
-import BScroll from '@better-scroll/core'
-jest.mock('@better-scroll/core')
+import BScroll from 'tz-better-scroll-core'
+jest.mock('tz-better-scroll-core')
 
 import NestedScroll, { DEFAUL_GROUP_ID } from '../index'
 

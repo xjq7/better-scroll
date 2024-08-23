@@ -1,5 +1,5 @@
 import PagesMatrix from '../PagesMatrix'
-import BScroll from '@better-scroll/core'
+import BScroll from 'tz-better-scroll-core'
 import { DEFAULT_PAGE_STATS } from '../constants'
 
 const createSlideElements = () => {

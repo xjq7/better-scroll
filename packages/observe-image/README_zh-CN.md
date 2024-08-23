@@ -5,8 +5,8 @@
 ## 使用
 
 ```js
-import BScroll from '@better-scroll/core'
-import ObserveImage from '@better-scroll/observe-image'
+import BScroll from 'tz-better-scroll-core'
+import ObserveImage from 'tz-better-scroll-observe-image'
 BScroll.use(ObserveImage)
 
 const bs = new BScroll('.wrapper', {

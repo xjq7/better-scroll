@@ -23,7 +23,7 @@ PUPPETEER_DOWNLOAD_HOST=https://npm.taobao.org/mirrors yarn
 ```bash
 npm install better-scroll -S  # 安装带有所有插件的 BetterScroll
 
-npm install @better-scroll/core # 核心滚动，大部分情况可能只需要一个简单的滚动
+npm install tz-better-scroll-core # 核心滚动，大部分情况可能只需要一个简单的滚动
 ```
 
 ```js
@@ -34,7 +34,7 @@ let bs = new BetterScroll('.wrapper', {
   zoom: true
 })
 
-import BScroll from '@better-scroll/core'
+import BScroll from 'tz-better-scroll-core'
 let bs = new BScroll('.wrapper', {})
 ```
 
@@ -55,10 +55,10 @@ let bs = BetterScroll.createBScroll(wrapper, {})
 不带有任何插件的 CoreScroll
 
 ```js
-<script src="https://unpkg.com/@better-scroll/core@latest/dist/core.js"></script>
+<script src="https://unpkg.com/tz-better-scroll-core@latest/dist/core.js"></script>
 
 // minify
-<script src="https://unpkg.com/@better-scroll/core@latest/dist/core.min.js"></script>
+<script src="https://unpkg.com/tz-better-scroll-core@latest/dist/core.min.js"></script>
 
 let wrapper = document.getElementById("wrapper")
 let bs = new BScroll(wrapper, {})
@@ -89,7 +89,7 @@ BetterScroll 最常见的应用场景是列表滚动，我们来看一下它的 
 最简单的初始化代码如下：
 
 ``` js
-import BScroll from '@better-scroll/core'
+import BScroll from 'tz-better-scroll-core'
 let wrapper = document.querySelector('.wrapper')
 let scroll = new BScroll(wrapper)
 ```
@@ -115,8 +115,8 @@ BetterScroll 也是一样的原理，我们可以用一张图更直观的感受�
 通过插件，增强 BetterScroll core scroll 的能力，比如
 
 ```js
-import BScroll from '@better-scroll/core'
-import PullUp from '@better-scroll/pull-up'
+import BScroll from 'tz-better-scroll-core'
+import PullUp from 'tz-better-scroll-pull-up'
 
 let bs = new BScroll('.wrapper', {
   pullUpLoad: true

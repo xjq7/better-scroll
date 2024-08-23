@@ -10,7 +10,7 @@ jest.mock('../Behavior')
 jest.mock('../../base/ActionsHandler')
 jest.mock('../Actions')
 
-import { EventEmitter, EventRegister } from '@better-scroll/shared-utils'
+import { EventEmitter, EventRegister } from 'tz-better-scroll-shared-utils'
 
 const Scroller = jest.fn().mockImplementation((wrapper, bscrollOptions) => {
   const content = wrapper.children[0]

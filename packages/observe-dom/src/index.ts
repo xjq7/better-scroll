@@ -1,7 +1,7 @@
-import BScroll from '@better-scroll/core'
-import { getRect, EventEmitter } from '@better-scroll/shared-utils'
+import BScroll from 'tz-better-scroll-core'
+import { getRect, EventEmitter } from 'tz-better-scroll-shared-utils'
 
-declare module '@better-scroll/core' {
+declare module 'tz-better-scroll-core' {
   interface CustomOptions {
     observeDOM?: true
   }

@@ -2,7 +2,7 @@ import DirectionLock from '../DirectionLock'
 import {
   Direction,
   DirectionLock as DirectionLockEnum,
-} from '@better-scroll/shared-utils'
+} from 'tz-better-scroll-shared-utils'
 describe('DirectionLock Class tests', () => {
   let directionLock: DirectionLock
   let e = new Event('touchstart') as any

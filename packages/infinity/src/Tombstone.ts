@@ -1,4 +1,4 @@
-import { style } from '@better-scroll/shared-utils'
+import { style } from 'tz-better-scroll-shared-utils'
 
 export default class Tombstone {
   private cached: Array<HTMLElement> = []

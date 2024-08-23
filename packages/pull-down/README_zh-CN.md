@@ -5,8 +5,8 @@
 ## 使用
 
 ```js
-import BScroll from '@better-scroll/core'
-import Pulldown from '@better-scroll/pull-down'
+import BScroll from 'tz-better-scroll-core'
+import Pulldown from 'tz-better-scroll-pull-down'
 BScroll.use(Pulldown)
 
 const bs = new BScroll('.wrapper', {

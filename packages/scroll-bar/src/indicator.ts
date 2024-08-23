@@ -1,4 +1,4 @@
-import BScroll, { TranslaterPoint } from '@better-scroll/core'
+import BScroll, { TranslaterPoint } from 'tz-better-scroll-core'
 import {
   style,
   EventEmitter,
@@ -6,7 +6,7 @@ import {
   getNow,
   Probe,
   EventRegister,
-} from '@better-scroll/shared-utils'
+} from 'tz-better-scroll-shared-utils'
 import EventHandler from './event-handler'
 
 export const enum IndicatorDirection {
@@ -358,10 +358,8 @@ export default class Indicator {
   }
 
   private refreshStyle(size: number, pos: number) {
-    const {
-      translateProperty: translatePropertyKey,
-      size: sizeKey,
-    } = this.keysMap
+    const { translateProperty: translatePropertyKey, size: sizeKey } =
+      this.keysMap
     const translateZ = this.scroll.options.translateZ
 
     this.indicatorEl.style[sizeKey] = `${size}px`

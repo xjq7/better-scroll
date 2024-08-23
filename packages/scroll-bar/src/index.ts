@@ -1,10 +1,10 @@
-import BScroll from '@better-scroll/core'
+import BScroll from 'tz-better-scroll-core'
 import Indicator, {
   IndicatorOptions,
   IndicatorDirection,
   OffsetType,
 } from './indicator'
-import { extend } from '@better-scroll/shared-utils'
+import { extend } from 'tz-better-scroll-shared-utils'
 
 export type ScrollbarOptions = Partial<ScrollbarConfig> | true
 
@@ -19,7 +19,7 @@ export interface ScrollbarConfig {
   scrollbarTrackOffsetType: OffsetType
   scrollbarTrackOffsetTime: number
 }
-declare module '@better-scroll/core' {
+declare module 'tz-better-scroll-core' {
   interface CustomOptions {
     scrollbar?: ScrollbarOptions
   }
@@ -46,9 +46,11 @@ export default class ScrollBar {
   }
 
   private handleOptions() {
-    const userOptions = (this.scroll.options.scrollbar === true
-      ? {}
-      : this.scroll.options.scrollbar) as Partial<ScrollbarConfig>
+    const userOptions = (
+      this.scroll.options.scrollbar === true
+        ? {}
+        : this.scroll.options.scrollbar
+    ) as Partial<ScrollbarConfig>
 
     const defaultOptions: ScrollbarConfig = {
       fade: true,

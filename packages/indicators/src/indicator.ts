@@ -1,4 +1,4 @@
-import BScroll from '@better-scroll/core'
+import BScroll from 'tz-better-scroll-core'
 import { IndicatorOptions, Ratio, Postion, ValueSign } from './types'
 import {
   EventRegister,
@@ -11,7 +11,7 @@ import {
   TouchEvent,
   style,
   maybePrevent,
-} from '@better-scroll/shared-utils'
+} from 'tz-better-scroll-shared-utils'
 const resolveRatioOption = (ratioConfig?: Ratio) => {
   let ret = {
     ratioX: 0,

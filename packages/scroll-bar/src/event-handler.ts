@@ -1,10 +1,10 @@
-import BScroll from '@better-scroll/core'
+import BScroll from 'tz-better-scroll-core'
 import {
   TouchEvent,
   EventRegister,
   EventEmitter,
   maybePrevent,
-} from '@better-scroll/shared-utils'
+} from 'tz-better-scroll-shared-utils'
 import Indicator from './indicator'
 
 interface EventHandlerOptions {

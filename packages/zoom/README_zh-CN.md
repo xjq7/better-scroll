@@ -5,8 +5,8 @@
 ## 使用
 
 ```js
-import BScroll from '@better-scroll/core'
-import Zoom from '@better-scroll/zoom'
+import BScroll from 'tz-better-scroll-core'
+import Zoom from 'tz-better-scroll-zoom'
 BScroll.use(Zoom)
 
 const bs = new BScroll('.zoom-wrapper', {

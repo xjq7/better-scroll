@@ -7,8 +7,8 @@
 ## 使用
 
 ```js
-import BScroll from '@better-scroll/core'
-import ObserveDom from '@better-scroll/observe-dom'
+import BScroll from 'tz-better-scroll-core'
+import ObserveDom from 'tz-better-scroll-observe-dom'
 BScroll.use(ObserveDom)
 
 const bs = new BScroll('.wrapper', {

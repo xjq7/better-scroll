@@ -2,7 +2,7 @@ import DirectionLock from '../DirectionLock'
 
 jest.mock('../DirectionLock')
 
-import { EventEmitter } from '@better-scroll/shared-utils'
+import { EventEmitter } from 'tz-better-scroll-shared-utils'
 
 const ScrollerActions = jest
   .fn()

@@ -5,8 +5,8 @@
 ## 使用
 
 ```js
-import BScroll from '@better-scroll/core'
-import Pullup from '@better-scroll/pull-up'
+import BScroll from 'tz-better-scroll-core'
+import Pullup from 'tz-better-scroll-pull-up'
 BScroll.use(Pullup)
 
 const bs = new BScroll('.wrapper', {

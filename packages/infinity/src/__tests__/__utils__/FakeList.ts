@@ -1,10 +1,10 @@
-import { mockDomOffset } from '@better-scroll/core/src/__tests__/__utils__/layout'
+import { mockDomOffset } from 'tz-better-scroll-core/src/__tests__/__utils__/layout'
 import { TOMBSTONE_HEIGHT } from './constans'
 
 export default class FakeList {
   private list: any[]
   constructor(size: number) {
-    this.list = Array.from({ length: size }).map(i => {
+    this.list = Array.from({ length: size }).map((i) => {
       return {}
     })
   }

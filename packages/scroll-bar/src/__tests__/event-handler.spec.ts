@@ -1,11 +1,11 @@
 import Indicator, { IndicatorDirection, OffsetType } from '../indicator'
-import BScroll from '@better-scroll/core'
+import BScroll from 'tz-better-scroll-core'
 import EventHandler from '../event-handler'
 import {
   dispatchTouchStart,
   dispatchTouchMove,
   dispatchTouchEnd,
-} from '@better-scroll/core/src/__tests__/__utils__/event'
+} from 'tz-better-scroll-core/src/__tests__/__utils__/event'
 
 const addProperties = <T extends Object, K extends Object>(
   target: T,

@@ -2,9 +2,9 @@ import {
   BScroll,
   expectFuncArguments,
   expectFuncReturnValue,
-  Options
+  Options,
 } from './index'
-import { EaseItem } from '@better-scroll/shared-utils/src'
+import { EaseItem } from 'tz-better-scroll-shared-utils/src'
 
 describe('core api parameter type should be correct', () => {
   type ExtraTransform = { start: object; end: object }

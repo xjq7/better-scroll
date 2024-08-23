@@ -1,5 +1,5 @@
-import BScroll from '@better-scroll/core'
-import { EventRegister, extend } from '@better-scroll/shared-utils'
+import BScroll from 'tz-better-scroll-core'
+import { EventRegister, extend } from 'tz-better-scroll-shared-utils'
 
 export type ObserveImageOptions = Partial<ObserveImageConfig> | true
 
@@ -7,7 +7,7 @@ export interface ObserveImageConfig {
   debounceTime: number
 }
 
-declare module '@better-scroll/core' {
+declare module 'tz-better-scroll-core' {
   interface CustomOptions {
     observeImage?: ObserveImageOptions
   }
@@ -32,9 +32,9 @@ export default class ObserveImage {
   }
 
   private handleOptions(userOptions: ObserveImageOptions = {}) {
-    userOptions = (userOptions === true ? {} : userOptions) as Partial<
-      ObserveImageConfig
-    >
+    userOptions = (
+      userOptions === true ? {} : userOptions
+    ) as Partial<ObserveImageConfig>
     const defaultOptions: ObserveImageConfig = {
       debounceTime: 100, // ms
     }

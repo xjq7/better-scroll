@@ -19,7 +19,7 @@
 ```bash
 npm install better-scroll -S # install 2.x，with full-featured plugin.
 
-npm install @better-scroll/core # only CoreScroll
+npm install tz-better-scroll-core # only CoreScroll
 ```
 
 ```js
@@ -30,7 +30,7 @@ let bs = new BetterScroll('.wrapper', {
   zoom: true
 })
 
-import BScroll from '@better-scroll/core'
+import BScroll from 'tz-better-scroll-core'
 
 let bs = new BScroll('.wrapper', {})
 ```
@@ -55,10 +55,10 @@ let bs = BetterScroll.createBScroll(wrapper, {})
 Only CoreScroll
 
 ```html
-<script src="https://unpkg.com/@better-scroll/core@latest/dist/core.js"></script>
+<script src="https://unpkg.com/tz-better-scroll-core@latest/dist/core.js"></script>
 
 <!-- minify -->
-<script src="https://unpkg.com/@better-scroll/core@latest/dist/core.min.js"></script>
+<script src="https://unpkg.com/tz-better-scroll-core@latest/dist/core.min.js"></script>
 ```
 
 ```js
@@ -92,7 +92,7 @@ In the code above, BetterScroll is applied to the outer `wrapper` container, and
 The simplest initialization code is as follow:
 
 ```javascript
-import BScroll from '@better-scroll/core'
+import BScroll from 'tz-better-scroll-core'
 let wrapper = document.querySelector('.wrapper')
 let scroll = new BScroll(wrapper)
 ```
@@ -118,8 +118,8 @@ The green part is the wrapper, also known as the parent container, which has **f
 Enhance the ability of BetterScroll core scroll through plugins, such as
 
 ```js
-import BScroll from '@better-scroll/core'
-import PullUp from '@better-scroll/pull-up'
+import BScroll from 'tz-better-scroll-core'
+import PullUp from 'tz-better-scroll-pull-up'
 
 let bs = new BScroll('.wrapper', {
   pullUpLoad: true

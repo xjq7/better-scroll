@@ -1,4 +1,4 @@
-import { getRect, Direction, EventEmitter } from '@better-scroll/shared-utils'
+import { getRect, Direction, EventEmitter } from 'tz-better-scroll-shared-utils'
 
 export type Bounces = [boolean, boolean]
 
@@ -46,7 +46,7 @@ export class Behavior {
       'computeBoundary',
       'momentum',
       'end',
-      'ignoreHasScroll'
+      'ignoreHasScroll',
     ])
     this.refresh(content)
   }
@@ -106,7 +106,7 @@ export class Behavior {
       destination?: number
       duration?: number
     } = {
-      duration: 0
+      duration: 0,
     }
 
     const absDist = Math.abs(this.currentPos - this.startPos)
@@ -157,7 +157,7 @@ export class Behavior {
       destination:
         current + ((speed * speed) / deceleration) * (distance < 0 ? -1 : 1),
       duration,
-      rate: 15
+      rate: 15,
     }
 
     this.hooks.trigger(this.hooks.eventTypes.momentum, momentumData, distance)
@@ -196,9 +196,8 @@ export class Behavior {
     // Force reflow
     const wrapperRect = getRect(this.wrapper)
     // use client is more fair than offset
-    this.wrapperSize = this.wrapper[
-      size === 'width' ? 'clientWidth' : 'clientHeight'
-    ]
+    this.wrapperSize =
+      this.wrapper[size === 'width' ? 'clientWidth' : 'clientHeight']
     this.setContent(content)
     const contentRect = getRect(this.content)
     this.contentSize = contentRect[size]
@@ -234,7 +233,7 @@ export class Behavior {
 
     const boundary: Boundary = {
       minScrollPos: 0,
-      maxScrollPos: this.wrapperSize - this.contentSize
+      maxScrollPos: this.wrapperSize - this.contentSize,
     }
     if (boundary.maxScrollPos < 0) {
       boundary.maxScrollPos -= this.relativeOffset
@@ -269,7 +268,7 @@ export class Behavior {
     const inBoundary = position === this.getCurrentPos()
     return {
       position,
-      inBoundary
+      inBoundary,
     }
   }
 

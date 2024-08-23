@@ -9,8 +9,8 @@ recaculating BetterScroll's scrollHeight or scrollWidth by `MutationObserver`, w
 ## Usage
 
 ```js
-import BScroll from '@better-scroll/core'
-import ObserveDom from '@better-scroll/observe-dom'
+import BScroll from 'tz-better-scroll-core'
+import ObserveDom from 'tz-better-scroll-observe-dom'
 BScroll.use(ObserveDom)
 
 const bs = new BScroll('.wrapper', {

@@ -1,11 +1,11 @@
-import BScroll, { MountedBScrollHTMLElement } from '@better-scroll/core'
+import BScroll, { MountedBScrollHTMLElement } from 'tz-better-scroll-core'
 import {
   Direction,
   EventEmitter,
   extend,
   warn,
   findIndex,
-} from '@better-scroll/shared-utils'
+} from 'tz-better-scroll-shared-utils'
 import BScrollFamily from './BScrollFamily'
 import propertiesConfig from './propertiesConfig'
 
@@ -19,7 +19,7 @@ export interface NestedScrollConfig {
 
 export type NestedScrollOptions = NestedScrollConfig | true
 
-declare module '@better-scroll/core' {
+declare module 'tz-better-scroll-core' {
   interface CustomOptions {
     nestedScroll?: NestedScrollOptions
   }
@@ -192,9 +192,9 @@ export default class NestedScroll implements PluginAPI {
   }
 
   private handleOptions(scroll: BScroll): number | string {
-    const userOptions = (scroll.options.nestedScroll === true
-      ? {}
-      : scroll.options.nestedScroll) as NestedScrollConfig
+    const userOptions = (
+      scroll.options.nestedScroll === true ? {} : scroll.options.nestedScroll
+    ) as NestedScrollConfig
     const defaultOptions: NestedScrollConfig = {
       groupId: DEFAUL_GROUP_ID,
     }

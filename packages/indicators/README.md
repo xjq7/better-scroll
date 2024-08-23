@@ -7,8 +7,8 @@ Indicator can be used to achieve magnifying glass, parallax scrolling and other 
 ## Usage
 
 ```js
-import BScroll from '@better-scroll/core'
-import Indicators from '@better-scroll/indicators'
+import BScroll from 'tz-better-scroll-core'
+import Indicators from 'tz-better-scroll-indicators'
 BScroll.use(Indicators)
 
 const bs = new BScroll('.wrapper', {

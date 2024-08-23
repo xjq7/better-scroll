@@ -1,9 +1,9 @@
-import BScroll from '@better-scroll/core'
+import BScroll from 'tz-better-scroll-core'
 import Indicator from './indicator'
 import { IndicatorOptions } from './types'
-import { assert } from '@better-scroll/shared-utils'
+import { assert } from 'tz-better-scroll-shared-utils'
 
-declare module '@better-scroll/core' {
+declare module 'tz-better-scroll-core' {
   interface CustomOptions {
     indicators?: IndicatorOptions[]
   }

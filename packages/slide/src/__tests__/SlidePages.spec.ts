@@ -1,9 +1,9 @@
 import SlidePages from '../SlidePages'
 import PageMatrix from '../PagesMatrix'
-import BScroll from '@better-scroll/core'
-import { ease } from '@better-scroll/shared-utils'
+import BScroll from 'tz-better-scroll-core'
+import { ease } from 'tz-better-scroll-shared-utils'
 
-jest.mock('@better-scroll/core')
+jest.mock('tz-better-scroll-core')
 jest.mock('../PagesMatrix')
 
 const createSlideElements = () => {

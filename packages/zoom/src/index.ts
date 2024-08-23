@@ -1,4 +1,4 @@
-import BScroll, { Behavior, TranslaterPoint } from '@better-scroll/core'
+import BScroll, { Behavior, TranslaterPoint } from 'tz-better-scroll-core'
 import propertiesConfig from './propertiesConfig'
 import {
   getDistance,
@@ -12,7 +12,7 @@ import {
   getNow,
   requestAnimationFrame,
   cancelAnimationFrame,
-} from '@better-scroll/shared-utils'
+} from 'tz-better-scroll-shared-utils'
 
 export type ZoomOptions = Partial<ZoomConfig> | true
 
@@ -28,7 +28,7 @@ export interface ZoomConfig {
 type OriginX = number | 'left' | 'right' | 'center'
 type OriginY = number | 'top' | 'bottom' | 'center'
 
-declare module '@better-scroll/core' {
+declare module 'tz-better-scroll-core' {
   interface CustomOptions {
     zoom?: ZoomOptions
   }
@@ -103,9 +103,9 @@ export default class Zoom implements PluginAPI {
   }
 
   private handleOptions() {
-    const userOptions = (this.scroll.options.zoom === true
-      ? {}
-      : this.scroll.options.zoom) as Partial<ZoomConfig>
+    const userOptions = (
+      this.scroll.options.zoom === true ? {} : this.scroll.options.zoom
+    ) as Partial<ZoomConfig>
     const defaultOptions: ZoomConfig = {
       start: 1,
       min: 1,

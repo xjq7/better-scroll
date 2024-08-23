@@ -7,8 +7,8 @@ The ability to inject a Carousel effect for BetterScroll.
 ## Usage
 
 ```js
-import BScroll from '@better-scroll/core'
-import Slide from '@better-scroll/slide'
+import BScroll from 'tz-better-scroll-core'
+import Slide from 'tz-better-scroll-slide'
 BScroll.use(Slide)
 
 const bs = new BScroll('.div', {

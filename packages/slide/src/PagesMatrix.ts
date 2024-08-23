@@ -1,4 +1,4 @@
-import BScroll from '@better-scroll/core'
+import BScroll from 'tz-better-scroll-core'
 import { PageIndex } from './SlidePages'
 import { DEFAULT_PAGE_STATS } from './constants'
 

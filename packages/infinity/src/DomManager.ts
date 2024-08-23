@@ -1,6 +1,6 @@
 import { pListItem } from './DataManager'
 import Tombstone from './Tombstone'
-import { style, cssVendor } from '@better-scroll/shared-utils'
+import { style, cssVendor } from 'tz-better-scroll-shared-utils'
 
 const ANIMATION_DURATION_MS = 200
 

@@ -8,8 +8,8 @@ when detecting images is loaded or failed to load, auto refresh BetterScroll's s
 ## Usage
 
 ```js
-import BScroll from '@better-scroll/core'
-import ObserveImage from '@better-scroll/observe-image'
+import BScroll from 'tz-better-scroll-core'
+import ObserveImage from 'tz-better-scroll-observe-image'
 BScroll.use(ObserveImage)
 
 const bs = new BScroll('.wrapper', {

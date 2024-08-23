@@ -7,8 +7,8 @@ An elegant and beautiful scroll bar.
 ## Usage
 
 ```js
-import BScroll from '@better-scroll/core'
-import Scrollbar from '@better-scroll/scroll-bar'
+import BScroll from 'tz-better-scroll-core'
+import Scrollbar from 'tz-better-scroll-scroll-bar'
 BScroll.use(Scrollbar)
 
 const bs = new BScroll('.wrapper', {

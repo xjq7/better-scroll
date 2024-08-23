@@ -1,7 +1,7 @@
-import BScroll from '@better-scroll/core'
-import { Probe } from '@better-scroll/shared-utils'
-import { ease } from '@better-scroll/shared-utils/src/ease'
-jest.mock('@better-scroll/core')
+import BScroll from 'tz-better-scroll-core'
+import { Probe } from 'tz-better-scroll-shared-utils'
+import { ease } from 'tz-better-scroll-shared-utils/src/ease'
+jest.mock('tz-better-scroll-core')
 
 import PullDown from '../index'
 

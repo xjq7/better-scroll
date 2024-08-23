@@ -1,13 +1,13 @@
 import ActionsHandler, {
   Options,
-} from '@better-scroll/core/src/base/ActionsHandler'
+} from 'tz-better-scroll-core/src/base/ActionsHandler'
 import {
   dispatchTouch,
   dispatchMouse,
   dispatchTouchStart,
   dispatchTouchEnd,
   dispatchTouchCancel,
-} from '@better-scroll/core/src/__tests__/__utils__/event'
+} from 'tz-better-scroll-core/src/__tests__/__utils__/event'
 
 describe('ActionsHandler', () => {
   let actionsHandler: ActionsHandler

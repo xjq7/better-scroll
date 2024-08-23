@@ -1,11 +1,11 @@
-import BScroll from '@better-scroll/core'
+import BScroll from 'tz-better-scroll-core'
 import ObserveDOM from '../index'
 import {
   mockDomOffset,
   CustomHTMLDivElement,
-} from '@better-scroll/core/src/__tests__/__utils__/layout'
+} from 'tz-better-scroll-core/src/__tests__/__utils__/layout'
 
-jest.mock('@better-scroll/core')
+jest.mock('tz-better-scroll-core')
 
 const addProperties = <T extends Object, K extends Object>(
   target: T,

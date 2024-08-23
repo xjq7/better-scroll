@@ -1,9 +1,9 @@
 import Indicator, { IndicatorDirection, OffsetType } from '../indicator'
 import EventHandler from '../event-handler'
-import BScroll from '@better-scroll/core'
-import { dispatchClick } from '@better-scroll/core/src/__tests__/__utils__/event'
+import BScroll from 'tz-better-scroll-core'
+import { dispatchClick } from 'tz-better-scroll-core/src/__tests__/__utils__/event'
 
-jest.mock('@better-scroll/core')
+jest.mock('tz-better-scroll-core')
 jest.mock('../event-handler')
 
 const addProperties = <T extends Object, K extends Object>(

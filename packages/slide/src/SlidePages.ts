@@ -1,5 +1,5 @@
-import { between, extend, warn } from '@better-scroll/shared-utils'
-import BScroll from '@better-scroll/core'
+import { between, extend, warn } from 'tz-better-scroll-shared-utils'
+import BScroll from 'tz-better-scroll-core'
 import { SlideConfig } from './index'
 import PagesMatrix, { PageStats } from './PagesMatrix'
 import { BASE_PAGE } from './constants'

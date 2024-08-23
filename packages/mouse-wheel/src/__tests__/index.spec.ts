@@ -1,8 +1,8 @@
-import BScroll from '@better-scroll/core'
-jest.mock('@better-scroll/core')
+import BScroll from 'tz-better-scroll-core'
+jest.mock('tz-better-scroll-core')
 
 import MouseWheel from '../index'
-import { createEvent } from '@better-scroll/core/src/__tests__/__utils__/event'
+import { createEvent } from 'tz-better-scroll-core/src/__tests__/__utils__/event'
 
 interface CustomMouseWheel extends Event {
   deltaX: number

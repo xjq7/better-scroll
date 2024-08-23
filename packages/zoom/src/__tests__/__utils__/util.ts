@@ -1,8 +1,8 @@
 import {
   createEvent,
-  CustomTouchEvent
-} from '@better-scroll/core/src/__tests__/__utils__/event'
-import { createDiv } from '@better-scroll/core/src/__tests__/__utils__/layout'
+  CustomTouchEvent,
+} from 'tz-better-scroll-core/src/__tests__/__utils__/event'
+import { createDiv } from 'tz-better-scroll-core/src/__tests__/__utils__/layout'
 
 export function createZoomElements() {
   const wrapper = createDiv(300, 300)

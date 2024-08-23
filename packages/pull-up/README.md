@@ -7,8 +7,8 @@ The ability to inject a pull-up load for BetterScroll.
 ## Usage
 
 ```js
-import BScroll from '@better-scroll/core'
-import PullUp from '@better-scroll/pull-up'
+import BScroll from 'tz-better-scroll-core'
+import PullUp from 'tz-better-scroll-pull-up'
 BScroll.use(PullUp)
 
 const bs = new BScroll('.wrapper', {

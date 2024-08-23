@@ -1,4 +1,4 @@
-import BScroll, { Boundary } from '@better-scroll/core'
+import BScroll, { Boundary } from 'tz-better-scroll-core'
 import {
   style,
   hasClass,
@@ -6,8 +6,8 @@ import {
   EaseItem,
   extend,
   Position,
-  HTMLCollectionToArray
-} from '@better-scroll/shared-utils'
+  HTMLCollectionToArray,
+} from 'tz-better-scroll-shared-utils'
 import propertiesConfig from './propertiesConfig'
 
 export type WheelOptions = Partial<WheelConfig> | true
@@ -23,7 +23,7 @@ export interface WheelConfig {
   wheelDisabledItemClass: string
 }
 
-declare module '@better-scroll/core' {
+declare module 'tz-better-scroll-core' {
   interface CustomOptions {
     wheel?: WheelOptions
   }
@@ -39,7 +39,7 @@ interface PluginAPI {
 }
 
 const CONSTANTS = {
-  rate: 4
+  rate: 4,
 }
 export default class Wheel implements PluginAPI {
   static pluginName = 'wheel'
@@ -69,9 +69,9 @@ export default class Wheel implements PluginAPI {
   }
 
   private handleOptions() {
-    const userOptions = (this.scroll.options.wheel === true
-      ? {}
-      : this.scroll.options.wheel) as Partial<WheelConfig>
+    const userOptions = (
+      this.scroll.options.wheel === true ? {} : this.scroll.options.wheel
+    ) as Partial<WheelConfig>
 
     const defaultOptions: WheelConfig = {
       wheelWrapperClass: 'wheel-scroll',
@@ -79,7 +79,7 @@ export default class Wheel implements PluginAPI {
       rotate: 25,
       adjustTime: 400,
       selectedIndex: 0,
-      wheelDisabledItemClass: 'wheel-disabled-item'
+      wheelDisabledItemClass: 'wheel-disabled-item',
     }
     this.options = extend(defaultOptions, userOptions)
   }
@@ -87,12 +87,8 @@ export default class Wheel implements PluginAPI {
   private handleHooks() {
     const scroll = this.scroll
     const scroller = this.scroll.scroller
-    const {
-      actionsHandler,
-      scrollBehaviorX,
-      scrollBehaviorY,
-      animater
-    } = scroller
+    const { actionsHandler, scrollBehaviorX, scrollBehaviorY, animater } =
+      scroller
     let prevContent = scroller.content
     // BScroll
     scroll.on(scroll.eventTypes.scrollEnd, (position: Position) => {
@@ -356,7 +352,7 @@ export default class Wheel implements PluginAPI {
     // when all the items are disabled, selectedIndex should always be -1
     return {
       index: this.wheelItemsAllDisabled ? -1 : currentIndex,
-      y: -currentIndex * this.itemHeight
+      y: -currentIndex * this.itemHeight,
     }
   }
 

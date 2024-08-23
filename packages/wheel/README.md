@@ -7,8 +7,8 @@ Implement a plugin similar to the effects of the IOS Picker component.
 ## Usage
 
 ```js
-import BScroll from '@better-scroll/core'
-import Wheel from '@better-scroll/wheel'
+import BScroll from 'tz-better-scroll-core'
+import Wheel from 'tz-better-scroll-wheel'
 BScroll.use(Wheel)
 
 const bs = new BScroll('.wheel-wrapper', {

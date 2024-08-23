@@ -5,8 +5,8 @@
 ## 使用
 
 ```js
-import BScroll from '@better-scroll/core'
-import MouseWheel from '@better-scroll/mouse-wheel'
+import BScroll from 'tz-better-scroll-core'
+import MouseWheel from 'tz-better-scroll-mouse-wheel'
 BScroll.use(MouseWheel)
 
 const bs = new BScroll('.wrapper', {

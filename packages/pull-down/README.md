@@ -7,8 +7,8 @@ The ability to inject a pull-down refresh for BetterScroll.
 ## Usage
 
 ```js
-import BScroll from '@better-scroll/core'
-import Pulldown from '@better-scroll/pull-down'
+import BScroll from 'tz-better-scroll-core'
+import Pulldown from 'tz-better-scroll-pull-down'
 BScroll.use(Pulldown)
 
 const bs = new BScroll('.wrapper', {

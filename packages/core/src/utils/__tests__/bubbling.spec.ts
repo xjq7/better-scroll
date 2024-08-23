@@ -1,5 +1,5 @@
 import { bubbling } from '../bubbling'
-import { EventEmitter } from '@better-scroll/shared-utils'
+import { EventEmitter } from 'tz-better-scroll-shared-utils'
 
 describe('bubbling', () => {
   it('bubbling', () => {

@@ -7,8 +7,8 @@ Movable 可移动区域插件。
 ## 使用
 
 ```js
-import BScroll from '@better-scroll/core'
-import Movable from '@better-scroll/movable'
+import BScroll from 'tz-better-scroll-core'
+import Movable from 'tz-better-scroll-movable'
 
 BScroll.use(Movable)
 

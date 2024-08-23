@@ -1,7 +1,7 @@
 import Indicator from '../indicator'
-import BScroll from '@better-scroll/core'
+import BScroll from 'tz-better-scroll-core'
 
-jest.mock('@better-scroll/core')
+jest.mock('tz-better-scroll-core')
 jest.mock('../indicator')
 
 import Indicators from '../index'

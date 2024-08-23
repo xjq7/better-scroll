@@ -4,7 +4,7 @@ import {
   cancelAnimationFrame,
   EaseFn,
   Probe,
-} from '@better-scroll/shared-utils'
+} from 'tz-better-scroll-shared-utils'
 import Base from './Base'
 import { TranslaterPoint } from '../translater'
 import { isValidPostion } from '../utils/compat'

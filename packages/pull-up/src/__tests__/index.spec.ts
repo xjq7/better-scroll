@@ -1,8 +1,8 @@
-import BScroll from '@better-scroll/core'
-jest.mock('@better-scroll/core')
+import BScroll from 'tz-better-scroll-core'
+jest.mock('tz-better-scroll-core')
 
-import PullUp from '@better-scroll/pull-up'
-import { Probe } from '@better-scroll/shared-utils'
+import PullUp from 'tz-better-scroll-pull-up'
+import { Probe } from 'tz-better-scroll-shared-utils'
 
 const createPullUpElements = () => {
   const wrapper = document.createElement('div')

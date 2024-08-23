@@ -1,4 +1,4 @@
-import BScroll from '@better-scroll/core'
+import BScroll from 'tz-better-scroll-core'
 import {
   between,
   prepend,
@@ -9,7 +9,7 @@ import {
   Direction,
   warn,
   EventEmitter,
-} from '@better-scroll/shared-utils'
+} from 'tz-better-scroll-shared-utils'
 import SlidePages, { Page, Position } from './SlidePages'
 import propertiesConfig from './propertiesConfig'
 import { BASE_PAGE } from './constants'
@@ -30,7 +30,7 @@ export interface SlideConfig {
 }
 export type SlideOptions = Partial<SlideConfig> | true
 
-declare module '@better-scroll/core' {
+declare module 'tz-better-scroll-core' {
   interface CustomOptions {
     slide?: SlideOptions
   }
@@ -111,9 +111,9 @@ export default class Slide implements PluginAPI {
   }
 
   private handleOptions() {
-    const userOptions = (this.scroll.options.slide === true
-      ? {}
-      : this.scroll.options.slide) as Partial<SlideConfig>
+    const userOptions = (
+      this.scroll.options.slide === true ? {} : this.scroll.options.slide
+    ) as Partial<SlideConfig>
     const defaultOptions: SlideConfig = {
       loop: true,
       threshold: 0.1,
@@ -295,10 +295,8 @@ export default class Slide implements PluginAPI {
         styleType: 'height',
       },
     ]
-    const {
-      content: slideContent,
-      wrapper: slideWrapper,
-    } = this.scroll.scroller
+    const { content: slideContent, wrapper: slideWrapper } =
+      this.scroll.scroller
     const scrollOptions = this.scroll.options
 
     styleConfigurations.forEach(({ direction, sizeType, styleType }) => {
@@ -341,14 +339,10 @@ export default class Slide implements PluginAPI {
 
   nearestPage(x: number, y: number): Page {
     const { scrollBehaviorX, scrollBehaviorY } = this.scroll.scroller
-    const {
-      maxScrollPos: maxScrollPosX,
-      minScrollPos: minScrollPosX,
-    } = scrollBehaviorX
-    const {
-      maxScrollPos: maxScrollPosY,
-      minScrollPos: minScrollPosY,
-    } = scrollBehaviorY
+    const { maxScrollPos: maxScrollPosX, minScrollPos: minScrollPosX } =
+      scrollBehaviorX
+    const { maxScrollPos: maxScrollPosY, minScrollPos: minScrollPosY } =
+      scrollBehaviorY
 
     return this.pages.getNearestPage(
       between(x, maxScrollPosX, minScrollPosX),
@@ -440,10 +434,8 @@ export default class Slide implements PluginAPI {
   }
 
   private modifyCurrentPage(point: Position) {
-    const {
-      pageX: prevExposedPageX,
-      pageY: prevExposedPageY,
-    } = this.getCurrentPage()
+    const { pageX: prevExposedPageX, pageY: prevExposedPageY } =
+      this.getCurrentPage()
     const newPage = this.nearestPage(point.x, point.y)
     this.setCurrentPage(newPage)
 
@@ -453,10 +445,8 @@ export default class Slide implements PluginAPI {
       return true
     }
 
-    const {
-      pageX: currentExposedPageX,
-      pageY: currentExposedPageY,
-    } = this.getCurrentPage()
+    const { pageX: currentExposedPageX, pageY: currentExposedPageY } =
+      this.getCurrentPage()
     this.pageWillChangeTo(newPage)
 
     // loop is true, and one page becomes many pages when call bs.refresh

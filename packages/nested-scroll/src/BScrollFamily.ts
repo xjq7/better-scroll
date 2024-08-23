@@ -1,5 +1,5 @@
-import BScroll from '@better-scroll/core'
-import { EventEmitter, findIndex } from '@better-scroll/shared-utils'
+import BScroll from 'tz-better-scroll-core'
+import { EventEmitter, findIndex } from 'tz-better-scroll-shared-utils'
 
 // second element is used to discribe the distance between two bs instance's wrapper DOM
 export type BScrollFamilyTuple = [BScrollFamily, number]

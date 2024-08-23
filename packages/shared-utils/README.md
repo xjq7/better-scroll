@@ -1,3 +1,3 @@
-# @better-scroll/shared-utils
+# tz-better-scroll-shared-utils
 
 shared-utils for BetterScroll.
