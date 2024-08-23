@@ -1,6 +1,6 @@
 {
   "name": "tz-better-scroll-indicators",
-  "version": "2.5.3",
+  "version": "2.5.4",
   "description": "used as parallax scrolling, magnifier effects",
   "author": {
     "name": "jizhi",
@@ -33,7 +33,7 @@
     "directory": "packages/indicators"
   },
   "dependencies": {
-    "tz-better-scroll-core": "^2.5.3"
+    "tz-better-scroll-core": "^2.5.4"
   },
   "gitHead": "5903d9832b35b02f4926a0dea91e7d24371e1b6a"
 }

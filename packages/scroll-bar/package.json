@@ -1,6 +1,6 @@
 {
   "name": "tz-better-scroll-scroll-bar",
-  "version": "2.5.3",
+  "version": "2.5.4",
   "description": "scrollbar is used to BetterScroll, which behaves like browser scrollbar",
   "author": {
     "name": "jizhi",
@@ -30,7 +30,7 @@
     "directory": "packages/scroll-bar"
   },
   "dependencies": {
-    "tz-better-scroll-core": "^2.5.3"
+    "tz-better-scroll-core": "^2.5.4"
   },
   "gitHead": "5903d9832b35b02f4926a0dea91e7d24371e1b6a"
 }
