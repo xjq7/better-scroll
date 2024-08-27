@@ -14,7 +14,7 @@ export const ease: EaseMap = {
   swipe: {
     style: 'cubic-bezier(0.17, 0.89, 0.45, 1)',
     fn: function (t: number) {
-      return 3 * (1 - t) * (1 - t) * 0.89 * t + 3 * (1 - t) * t * t + t * t * t
+      return 1 + --t * t * t * t * t
     },
   },
   // easeOutQuard
