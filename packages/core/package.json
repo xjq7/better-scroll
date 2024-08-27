@@ -1,6 +1,6 @@
 {
   "name": "tz-better-scroll-core",
-  "version": "2.5.5-beta.1",
+  "version": "2.5.5-beta.2",
   "description": "Minimalistic core scrolling for BetterScroll, it is pure and tiny",
   "author": {
     "name": "jizhi",
@@ -31,7 +31,7 @@
     "directory": "packages/core"
   },
   "dependencies": {
-    "tz-better-scroll-shared-utils": "^2.5.5-beta.1"
+    "tz-better-scroll-shared-utils": "^2.5.5-beta.2"
   },
   "gitHead": "5903d9832b35b02f4926a0dea91e7d24371e1b6a"
 }
