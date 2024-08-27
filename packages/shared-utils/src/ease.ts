@@ -11,11 +11,10 @@ export interface EaseFn {
 }
 
 export const ease: EaseMap = {
-  // easeOutQuint
   swipe: {
-    style: 'cubic-bezier(0.23, 1, 0.32, 1)',
+    style: 'cubic-bezier(0.17, 0.89, 0.45, 1)',
     fn: function (t: number) {
-      return 1 + --t * t * t * t * t
+      return 3 * (1 - t) * (1 - t) * 0.89 * t + 3 * (1 - t) * t * t + t * t * t
     },
   },
   // easeOutQuard
@@ -30,12 +29,6 @@ export const ease: EaseMap = {
     style: 'cubic-bezier(0.165, 0.84, 0.44, 1)',
     fn: function (t: number) {
       return 1 - --t * t * t * t
-    },
-  },
-  circular: {
-    style: 'cubic-bezier(0.1, 0.57, 0.1, 1)',
-    fn: function (t: number) {
-      return Math.sqrt(1 - --t * t)
     },
   },
 }

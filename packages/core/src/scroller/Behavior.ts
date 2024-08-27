@@ -148,32 +148,36 @@ export class Behavior {
     wrapperSize: number,
     options = this.options
   ) {
-    let distance = current - start
-    const speed = Math.abs(distance) / time
+    const distance = current - start
+    const speed = (2 * Math.abs(distance)) / time
 
     const { deceleration, swipeBounceTime, swipeTime } = options
-    const duration = speed / deceleration
     const momentumData = {
-      destination:
-        current + ((speed * speed) / deceleration) * (distance < 0 ? -1 : 1),
-      duration,
-      rate: 15,
+      destination: current + (speed / deceleration) * (distance < 0 ? -1 : 1),
+      duration: swipeTime,
     }
+
+    // 回弹阻力
+    const bounceRate = 10
+    // 回弹的最大限度
+    const maxOverflow = wrapperSize / 6
 
     this.hooks.trigger(this.hooks.eventTypes.momentum, momentumData, distance)
 
     if (momentumData.destination < lowerMargin) {
-      momentumData.destination = wrapperSize
-        ? lowerMargin - (wrapperSize / 2.5) * (speed / 8)
-        : lowerMargin
-      distance = Math.abs(momentumData.destination - current)
-      momentumData.duration = distance / speed
+      const overflow = lowerMargin - momentumData.destination
+      momentumData.destination = Math.max(
+        lowerMargin - maxOverflow,
+        lowerMargin - overflow / bounceRate
+      )
+      momentumData.duration = swipeBounceTime
     } else if (momentumData.destination > upperMargin) {
-      momentumData.destination = wrapperSize
-        ? (wrapperSize / 2.5) * (speed / 8)
-        : 0
-      distance = Math.abs(current) + momentumData.destination
-      momentumData.duration = distance / speed
+      const overflow = momentumData.destination - upperMargin
+      momentumData.destination = Math.min(
+        upperMargin + maxOverflow,
+        upperMargin + overflow / bounceRate
+      )
+      momentumData.duration = swipeBounceTime
     }
     momentumData.destination = Math.round(momentumData.destination)
     return momentumData
